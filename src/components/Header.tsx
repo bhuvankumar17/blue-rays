@@ -11,16 +11,12 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-3">
             <div className="relative w-14 h-14">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.jpg"
                 alt="BR Green Energy"
                 fill
                 className="object-contain"
                 priority
               />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-blue-900">BR</span>
-              <span className="text-sm font-semibold text-lime-500 -mt-1">GREEN ENERGY</span>
             </div>
           </Link>
           

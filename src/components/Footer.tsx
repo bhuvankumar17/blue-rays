@@ -13,15 +13,11 @@ export function Footer() {
             <div className="flex items-center space-x-3 mb-4">
               <div className="relative w-12 h-12">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo.jpg"
                   alt="BR Green Energy"
                   fill
                   className="object-contain"
                 />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-white">BR</span>
-                <span className="text-xs font-semibold text-lime-400 -mt-1">GREEN ENERGY</span>
               </div>
             </div>
             <p className="text-gray-400 mb-4">

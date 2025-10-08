@@ -21,7 +21,7 @@ export function Services() {
           <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div className="aspect-[4/3] relative">
               <Image
-                src="/images/solar-panels.jpg"
+                src="/images/cover-image-3.jpg"
                 alt="Solar Panels"
                 fill
                 className="object-cover"
@@ -41,7 +41,7 @@ export function Services() {
           <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div className="aspect-[4/3] relative">
               <Image
-                src="/images/solar-panels.jpg"
+                src="/images/cover-image-1.jpg"
                 alt="Solar Installation"
                 fill
                 className="object-cover"

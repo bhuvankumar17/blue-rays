@@ -9,7 +9,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-transparent z-10"></div>
         <Image
-          src="/images/solar-panels.jpg"
+          src="/images/cover-image-1.jpg"
           alt="Solar Panels Installation"
           fill
           className="object-cover"
