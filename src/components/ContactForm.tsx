@@ -27,10 +27,10 @@ export function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-white">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-teal-700 mb-4">
             Get Your Free Consultation
           </h2>
           <p className="text-xl text-gray-600">
@@ -41,47 +41,44 @@ export function ContactForm() {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold text-teal-700 mb-6">
                 Contact Information
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-blue-600" />
+                  <div className="h-12 w-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-6 w-6 text-teal-600" />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Phone</div>
-                    <div className="text-gray-600">1-800-BLUE-RAYS</div>
-                    <div className="text-gray-600">(1-800-258-3729)</div>
+                    <a href="tel:+919600970313" className="text-teal-600 hover:underline">+91 9600970313</a>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-6 w-6 text-blue-600" />
+                  <div className="h-12 w-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="h-6 w-6 text-teal-600" />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Email</div>
-                    <div className="text-gray-600">info@bluerays.com</div>
-                    <div className="text-gray-600">support@bluerays.com</div>
+                    <a href="mailto:info@blueraysolar.com" className="text-teal-600 hover:underline">info@blueraysolar.com</a>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-blue-600" />
+                  <div className="h-12 w-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-teal-600" />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Address</div>
-                    <div className="text-gray-600">123 Solar Street</div>
-                    <div className="text-gray-600">Energy City, EC 12345</div>
+                    <div className="text-gray-600">Salem, Tamil Nadu</div>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="p-6 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl text-white">
-              <h4 className="text-xl font-bold mb-3">Why Choose Blue Rays?</h4>
+            <div className="p-6 bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl text-white">
+              <h4 className="text-xl font-bold mb-3">Why Choose Blueray Solar?</h4>
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <span className="h-2 w-2 bg-white rounded-full mr-3"></span>
@@ -103,7 +100,7 @@ export function ContactForm() {
             </div>
           </div>
           
-          <div className="bg-gray-50 p-8 rounded-2xl">
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -116,7 +113,7 @@ export function ContactForm() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all"
                   placeholder="John Doe"
                 />
               </div>
@@ -132,7 +129,7 @@ export function ContactForm() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all"
                   placeholder="john@example.com"
                 />
               </div>
@@ -147,8 +144,8 @@ export function ContactForm() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                  placeholder="(123) 456-7890"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all"
+                  placeholder="+91 9600970313"
                 />
               </div>
               
@@ -163,14 +160,14 @@ export function ContactForm() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all resize-none"
                   placeholder="Tell us about your solar energy needs..."
                 />
               </div>
               
               <button
                 type="submit"
-                className="w-full px-6 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 font-semibold shadow-lg shadow-blue-600/30"
+                className="w-full px-6 py-4 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 font-semibold shadow-lg shadow-teal-600/30"
               >
                 <span>Send Message</span>
                 <Send className="h-5 w-5" />

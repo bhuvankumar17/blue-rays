@@ -5,9 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Blue Rays - Solar Panel Solutions",
-  description: "Leading provider of sustainable solar energy solutions. Transform your home or business with clean, renewable energy.",
-  keywords: ["solar panels", "renewable energy", "solar installation", "solar power", "clean energy"],
+  title: "Blueray Solar - Solar Panel Solutions",
+  description: "Leading provider of sustainable solar energy solutions. Professional solar panel installation for residential and commercial properties.",
+  keywords: ["solar panels", "renewable energy", "solar installation", "solar power", "clean energy", "blueray solar"],
 };
 
 export default function RootLayout({
