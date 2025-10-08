@@ -9,28 +9,35 @@ export function Header() {
       <nav className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center">
-              <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
-              </svg>
+            <div className="relative w-14 h-14">
+              <Image
+                src="/images/logo.png"
+                alt="BR Green Energy"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
-            <span className="text-xl font-bold text-gray-900">Blueray Solar</span>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-blue-900">BR</span>
+              <span className="text-sm font-semibold text-lime-500 -mt-1">GREEN ENERGY</span>
+            </div>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="#home" className="text-gray-700 hover:text-teal-600 transition-colors font-medium">
+            <Link href="#home" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Home
             </Link>
-            <Link href="#about" className="text-gray-700 hover:text-teal-600 transition-colors font-medium">
+            <Link href="#about" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               About Us
             </Link>
-            <Link href="#products" className="text-gray-700 hover:text-teal-600 transition-colors font-medium">
+            <Link href="#products" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Products
             </Link>
-            <Link href="#gallery" className="text-gray-700 hover:text-teal-600 transition-colors font-medium">
+            <Link href="#gallery" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Gallery
             </Link>
-            <Link href="#contact" className="text-gray-700 hover:text-teal-600 transition-colors font-medium">
+            <Link href="#contact" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Contact
             </Link>
           </div>
@@ -38,10 +45,10 @@ export function Header() {
           <div className="flex items-center space-x-4">
             <div className="hidden lg:flex flex-col items-end">
               <span className="text-xs text-gray-500">Phone Number</span>
-              <span className="text-sm font-semibold text-teal-600">+91 9600970313</span>
+              <span className="text-sm font-semibold text-cyan-600">+91 9600970313</span>
             </div>
             <Link href="#contact">
-              <button className="px-6 py-2.5 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors font-medium">
+              <button className="px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md hover:from-cyan-600 hover:to-blue-700 transition-all font-medium shadow-lg">
                 Contact Us
               </button>
             </Link>

@@ -30,7 +30,7 @@ export function ContactForm() {
     <section id="contact" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold text-teal-700 mb-4">
+          <h2 className="text-4xl font-bold text-blue-900 mb-4">
             Get Your Free Consultation
           </h2>
           <p className="text-xl text-gray-600">
@@ -41,66 +41,66 @@ export function ContactForm() {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-teal-700 mb-6">
+              <h3 className="text-2xl font-bold text-blue-900 mb-6">
                 Contact Information
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <div className="h-12 w-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-teal-600" />
+                  <div className="h-12 w-12 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-6 w-6 text-cyan-600" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">Phone</div>
-                    <a href="tel:+919600970313" className="text-teal-600 hover:underline">+91 9600970313</a>
+                    <div className="font-semibold text-blue-900">Phone</div>
+                    <a href="tel:+919600970313" className="text-cyan-600 hover:underline">+91 9600970313</a>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="h-12 w-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-6 w-6 text-teal-600" />
+                  <div className="h-12 w-12 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="h-6 w-6 text-cyan-600" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">Email</div>
-                    <a href="mailto:info@blueraysolar.com" className="text-teal-600 hover:underline">info@blueraysolar.com</a>
+                    <div className="font-semibold text-blue-900">Email</div>
+                    <a href="mailto:info@brgreenenergy.com" className="text-cyan-600 hover:underline">info@brgreenenergy.com</a>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="h-12 w-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-teal-600" />
+                  <div className="h-12 w-12 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-cyan-600" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">Address</div>
+                    <div className="font-semibold text-blue-900">Address</div>
                     <div className="text-gray-600">Salem, Tamil Nadu</div>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="p-6 bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl text-white">
-              <h4 className="text-xl font-bold mb-3">Why Choose Blueray Solar?</h4>
+            <div className="p-6 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl text-white shadow-xl">
+              <h4 className="text-xl font-bold mb-3">Why Choose BR Green Energy?</h4>
               <ul className="space-y-2">
                 <li className="flex items-center">
-                  <span className="h-2 w-2 bg-white rounded-full mr-3"></span>
+                  <span className="h-2 w-2 bg-lime-400 rounded-full mr-3"></span>
                   Free consultation & site assessment
                 </li>
                 <li className="flex items-center">
-                  <span className="h-2 w-2 bg-white rounded-full mr-3"></span>
+                  <span className="h-2 w-2 bg-lime-400 rounded-full mr-3"></span>
                   Competitive pricing & financing options
                 </li>
                 <li className="flex items-center">
-                  <span className="h-2 w-2 bg-white rounded-full mr-3"></span>
+                  <span className="h-2 w-2 bg-lime-400 rounded-full mr-3"></span>
                   Expert installation & ongoing support
                 </li>
                 <li className="flex items-center">
-                  <span className="h-2 w-2 bg-white rounded-full mr-3"></span>
+                  <span className="h-2 w-2 bg-lime-400 rounded-full mr-3"></span>
                   25-year warranty on all installations
                 </li>
               </ul>
             </div>
           </div>
           
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+          <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-200">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -113,7 +113,7 @@ export function ContactForm() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none transition-all"
                   placeholder="John Doe"
                 />
               </div>
@@ -129,7 +129,7 @@ export function ContactForm() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none transition-all"
                   placeholder="john@example.com"
                 />
               </div>
@@ -144,7 +144,7 @@ export function ContactForm() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none transition-all"
                   placeholder="+91 9600970313"
                 />
               </div>
@@ -160,14 +160,14 @@ export function ContactForm() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none transition-all resize-none"
                   placeholder="Tell us about your solar energy needs..."
                 />
               </div>
               
               <button
                 type="submit"
-                className="w-full px-6 py-4 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 font-semibold shadow-lg shadow-teal-600/30"
+                className="w-full px-6 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 font-semibold shadow-lg"
               >
                 <span>Send Message</span>
                 <Send className="h-5 w-5" />
