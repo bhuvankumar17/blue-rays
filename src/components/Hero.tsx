@@ -42,6 +42,33 @@ export function Hero() {
               </button>
             </a>
           </div>
+          
+          {/* Category Buttons */}
+          <div className="mt-8">
+            <p className="text-white/80 text-sm mb-4 uppercase tracking-wide">Our Solutions</p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <a href="#products">
+                <button className="px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-lg hover:bg-white/15 hover:border-lime-400 transition-all text-sm font-medium">
+                  Residential
+                </button>
+              </a>
+              <a href="#products">
+                <button className="px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-lg hover:bg-white/15 hover:border-lime-400 transition-all text-sm font-medium">
+                  Commercial
+                </button>
+              </a>
+              <a href="#products">
+                <button className="px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-lg hover:bg-white/15 hover:border-lime-400 transition-all text-sm font-medium">
+                  Industrial
+                </button>
+              </a>
+              <a href="#products">
+                <button className="px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-lg hover:bg-white/15 hover:border-lime-400 transition-all text-sm font-medium">
+                  Agricultural
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 

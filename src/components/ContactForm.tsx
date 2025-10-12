@@ -163,6 +163,7 @@ export function ContactForm() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none transition-all"
                   placeholder="John Doe"
+                  suppressHydrationWarning
                 />
               </div>
               
@@ -179,6 +180,7 @@ export function ContactForm() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none transition-all"
                   placeholder="john@example.com"
+                  suppressHydrationWarning
                 />
               </div>
               
@@ -194,6 +196,7 @@ export function ContactForm() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none transition-all"
                   placeholder="+91 9600970313"
+                  suppressHydrationWarning
                 />
               </div>
               
@@ -210,6 +213,7 @@ export function ContactForm() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none transition-all resize-none"
                   placeholder="Tell us about your solar energy needs..."
+                  suppressHydrationWarning
                 />
               </div>
               
@@ -217,6 +221,7 @@ export function ContactForm() {
                 type="submit"
                 disabled={isSubmitting}
                 className="w-full px-6 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 font-semibold shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                suppressHydrationWarning
               >
                 <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
                 {!isSubmitting && <Send className="h-5 w-5" />}
