@@ -2,7 +2,7 @@
   "name": "blue-rays",
   "version": "1.0.0",
   "private": true,
-  "description": "Blue Rays Solar Panel Business - Modern Next.js Application",
+  "description": "Blue Rays Green Energy - Modern Next.js Solar Application",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
