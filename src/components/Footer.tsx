@@ -75,7 +75,7 @@ export function Footer() {
               </li>
               <li className="text-gray-400">
                 <span className="text-white">Email:</span><br/>
-                <a href="mailto:info@brgreenenergy.com" className="hover:text-lime-400 transition-colors">info@brgreenenergy.com</a>
+                <a href="mailto:blueraysenergy@gmail.com" className="hover:text-lime-400 transition-colors">blueraysenergy@gmail.com</a>
               </li>
               <li><Link href="#contact" className="hover:text-lime-400 transition-colors">Contact Form</Link></li>
             </ul>

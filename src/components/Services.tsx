@@ -72,8 +72,8 @@ export function Services() {
             <div className="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center mb-4">
               <Shield className="h-6 w-6 text-white" />
             </div>
-            <h4 className="font-bold text-lg text-blue-900 mb-2">25-Year Warranty</h4>
-            <p className="text-gray-600 text-sm">Industry-leading warranty on all our products and installations for peace of mind</p>
+            <h4 className="font-bold text-lg text-blue-900 mb-2">Warranty</h4>
+            <p className="text-gray-600 text-sm">30 years warranty on solar panels & 7-10 years warranty on inverters</p>
           </div>
           
           <div className="p-6 bg-white rounded-xl border-2 border-cyan-100 hover:border-cyan-300 transition-all">
