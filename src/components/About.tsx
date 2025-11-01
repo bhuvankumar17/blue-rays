@@ -11,10 +11,12 @@ export function About() {
           <div className="relative">
             <div className="aspect-[4/3] bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/cover-image-2.jpg"
-                alt="Commercial Solar Installation"
+                src="/images/residential-solar-1.jpg"
+                alt="Beautiful Home with Solar Panels"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>

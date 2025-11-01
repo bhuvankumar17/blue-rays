@@ -1,8 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export function Hero() {
+  const router = useRouter();
   return (
     <section id="home" className="relative pt-20 pb-0 min-h-screen flex items-center">
       {/* Background Image */}
@@ -20,6 +23,10 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-6 relative z-20">
         <div className="max-w-3xl">
+          <h2 className="text-6xl lg:text-7xl font-extrabold text-center mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-lime-400 bg-clip-text text-transparent leading-tight">
+            BLUE RAYS GREEN ENERGY
+          </h2>
+          
           <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             TURN YOUR ROOF INTO A{" "}
             <span className="text-lime-400">POWER PLANT</span>
@@ -31,43 +38,74 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#contact">
-              <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 font-semibold shadow-xl text-lg">
+            <Link href="/contact">
+              <button suppressHydrationWarning className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 font-semibold shadow-xl text-lg">
                 Get Free Quote
               </button>
-            </a>
-            <a href="#about">
-              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-lg hover:bg-white/20 transition-all font-semibold text-lg">
+            </Link>
+            <Link href="/about">
+              <button suppressHydrationWarning className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-lg hover:bg-white/20 transition-all font-semibold text-lg">
                 Learn More
               </button>
-            </a>
+            </Link>
           </div>
-          
-          {/* Category Buttons */}
-          <div className="mt-8">
-            <p className="text-white/80 text-sm mb-4 uppercase tracking-wide">Our Solutions</p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <a href="#products">
-                <button className="px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-lg hover:bg-white/15 hover:border-lime-400 transition-all text-sm font-medium">
-                  Residential
-                </button>
-              </a>
-              <a href="#products">
-                <button className="px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-lg hover:bg-white/15 hover:border-lime-400 transition-all text-sm font-medium">
-                  Commercial
-                </button>
-              </a>
-              <a href="#products">
-                <button className="px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-lg hover:bg-white/15 hover:border-lime-400 transition-all text-sm font-medium">
-                  Industrial
-                </button>
-              </a>
-              <a href="#products">
-                <button className="px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-lg hover:bg-white/15 hover:border-lime-400 transition-all text-sm font-medium">
-                  Agricultural
-                </button>
-              </a>
-            </div>
+        </div>
+      </div>
+
+      {/* Our Solutions Section - Right Side Vertical */}
+      <div className="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 hidden lg:block">
+        <div className="flex flex-col items-center space-y-6">
+          <p className="text-lime-400 text-xl mb-4 uppercase tracking-wider font-bold text-center">Our Solutions</p>
+          <div className="flex flex-col space-y-5 items-center">
+            <Link href="/residential" className="group">
+              <button suppressHydrationWarning className="px-12 py-6 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-2xl hover:bg-white/20 hover:border-lime-400 transition-all text-xl font-bold shadow-xl group-hover:transform group-hover:scale-110 w-[220px] text-center">
+                Residential
+              </button>
+            </Link>
+            <Link href="/commercial" className="group">
+              <button suppressHydrationWarning className="px-12 py-6 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-2xl hover:bg-white/20 hover:border-lime-400 transition-all text-xl font-bold shadow-xl group-hover:transform group-hover:scale-110 w-[220px] text-center">
+                Commercial
+              </button>
+            </Link>
+            <Link href="/products" className="group">
+              <button suppressHydrationWarning className="px-12 py-6 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-2xl hover:bg-white/20 hover:border-lime-400 transition-all text-xl font-bold shadow-xl group-hover:transform group-hover:scale-110 w-[220px] text-center">
+                Industrial
+              </button>
+            </Link>
+            <Link href="/products" className="group">
+              <button suppressHydrationWarning className="px-12 py-6 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-2xl hover:bg-white/20 hover:border-lime-400 transition-all text-xl font-bold shadow-xl group-hover:transform group-hover:scale-110 w-[220px] text-center">
+                Agricultural
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Our Solutions - Bottom for small screens */}
+      <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 z-20 w-full max-w-lg px-6 lg:hidden">
+        <div className="text-center">
+          <p className="text-lime-400 text-lg mb-6 uppercase tracking-wider font-bold">Our Solutions</p>
+          <div className="grid grid-cols-2 gap-4">
+            <Link href="/residential" className="group">
+              <button suppressHydrationWarning className="w-full px-6 py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-lime-400 transition-all text-lg font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
+                Residential
+              </button>
+            </Link>
+            <Link href="/commercial" className="group">
+              <button suppressHydrationWarning className="w-full px-6 py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-lime-400 transition-all text-lg font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
+                Commercial
+              </button>
+            </Link>
+            <Link href="/products" className="group">
+              <button suppressHydrationWarning className="w-full px-6 py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-lime-400 transition-all text-lg font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
+                Industrial
+              </button>
+            </Link>
+            <Link href="/products" className="group">
+              <button suppressHydrationWarning className="w-full px-6 py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-lime-400 transition-all text-lg font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
+                Agricultural
+              </button>
+            </Link>
           </div>
         </div>
       </div>
