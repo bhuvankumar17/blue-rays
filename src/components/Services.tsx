@@ -19,7 +19,7 @@ export function Services() {
         <div className="mt-16 max-w-5xl mx-auto">
           <div className="text-center mb-10">
             <h3 className="text-2xl font-bold text-blue-900 mb-2">Premium Solar Panel Brands</h3>
-            <p className="text-gray-600">We partner with India's leading solar panel manufacturers</p>
+            <p className="text-gray-600">We partner with India&apos;s leading solar panel manufacturers</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
