@@ -32,9 +32,16 @@ async function dbConnect() {
       bufferCommands: false,
       serverSelectionTimeoutMS: 30000,
       socketTimeoutMS: 45000,
+      family: 4, // Use IPv4, skip trying IPv6
+      maxPoolSize: 10,
+      minPoolSize: 5,
     };
 
-    cached.promise = mongoose.connect(MONGODB_URI!, opts);
+    cached.promise = mongoose.connect(MONGODB_URI!, opts).catch((err) => {
+      cached.promise = null;
+      console.error('MongoDB connection error:', err);
+      throw err;
+    });
   }
 
   try {
