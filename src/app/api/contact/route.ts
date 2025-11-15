@@ -38,14 +38,14 @@ export async function POST(request: NextRequest) {
 
     // Send email notification (this is the critical part)
     try {
-      await resend.emails.send({
-        from: 'Blue Rays Solar <onboarding@resend.dev>', // You'll update this later with your domain
-        to: process.env.CONTACT_EMAIL || 'blueraysdata@gmail.com',
+      const emailResult = await resend.emails.send({
+        from: 'Blue Rays Solar <onboarding@resend.dev>',
+        to: 'blueraysdata@gmail.com',
         replyTo: email,
-        subject: `New Contact Form Submission from ${name}`,
+        subject: `🔔 New Inquiry from ${name}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #1e40af;">New Contact Form Submission</h2>
+            <h2 style="color: #1e40af;">🌟 New Contact Form Submission</h2>
             <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
               <p><strong>Name:</strong> ${name}</p>
               <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
@@ -65,11 +65,13 @@ export async function POST(request: NextRequest) {
         `,
       });
       
-      console.log('Email sent successfully to:', process.env.CONTACT_EMAIL);
-    } catch (emailError) {
-      console.error('Email sending error:', emailError);
+      console.log('✅ Email sent successfully!', emailResult);
+      console.log('📬 Sent to: blueraysdata@gmail.com');
+    } catch (emailError: any) {
+      console.error('❌ Email sending error:', emailError);
+      console.error('Error details:', emailError.message);
       // If email also fails, this is a critical error
-      throw new Error('Failed to send notification email. Please try again or contact us directly.');
+      throw new Error(`Failed to send notification email: ${emailError.message}`);
     }
 
     return NextResponse.json({
