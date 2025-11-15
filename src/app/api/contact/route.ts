@@ -10,18 +10,19 @@ export async function POST(request: NextRequest) {
     await dbConnect();
 
     const body = await request.json();
-    const { email, phone, message } = body;
+    const { name, email, phone, message } = body;
 
     // Validate required fields
-    if (!email || !message) {
+    if (!name || !email || !message) {
       return NextResponse.json(
-        { success: false, error: 'Please provide email and message' },
+        { success: false, error: 'Please provide name, email, and message' },
         { status: 400 }
       );
     }
 
-    // Create new contact
+    // Create new contact in database
     const contact = await Contact.create({
+      name,
       email,
       phone,
       message,
@@ -31,31 +32,34 @@ export async function POST(request: NextRequest) {
     // Send email notification
     try {
       await resend.emails.send({
-        from: 'Blue Rays Solar <onboarding@resend.dev>',
-        to: process.env.NOTIFICATION_EMAIL || 'blueraysenergy@gmail.com',
-        subject: '🌞 New Contact Form Submission - Blue Rays Solar',
+        from: 'Blue Rays Solar <onboarding@resend.dev>', // You'll update this later with your domain
+        to: process.env.CONTACT_EMAIL || 'your-email@example.com', // Your email address
+        replyTo: email,
+        subject: `New Contact Form Submission from ${name}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #0369a1; border-bottom: 3px solid #22d3ee; padding-bottom: 10px;">
-              New Contact Form Submission
-            </h2>
-            <div style="background-color: #f0f9ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
-              <p style="margin: 10px 0;"><strong>Email:</strong> ${email}</p>
-              <p style="margin: 10px 0;"><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-              <p style="margin: 10px 0;"><strong>Message:</strong></p>
-              <p style="background-color: white; padding: 15px; border-left: 4px solid #22d3ee; margin: 10px 0;">
+            <h2 style="color: #1e40af;">New Contact Form Submission</h2>
+            <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+              <p><strong>Name:</strong> ${name}</p>
+              <p><strong>Email:</strong> ${email}</p>
+              <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+            </div>
+            <div style="margin: 20px 0;">
+              <h3 style="color: #374151;">Message:</h3>
+              <p style="background-color: #f9fafb; padding: 15px; border-left: 4px solid #06b6d4; border-radius: 4px;">
                 ${message}
               </p>
             </div>
-            <p style="color: #64748b; font-size: 14px; margin-top: 20px;">
-              Submitted from: Blue Rays Solar Website
+            <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;">
+            <p style="color: #6b7280; font-size: 12px;">
+              This email was sent from your Blue Rays Solar contact form.
             </p>
           </div>
         `,
       });
     } catch (emailError) {
-      console.error('Email sending failed:', emailError);
-      // Continue even if email fails - data is still saved in database
+      console.error('Email sending error:', emailError);
+      // Don't fail the request if email fails, but log it
     }
 
     return NextResponse.json({
@@ -63,6 +67,7 @@ export async function POST(request: NextRequest) {
       message: 'Thank you for contacting us! We will get back to you soon.',
       data: {
         id: contact._id,
+        name: contact.name,
         email: contact.email,
       },
     });
