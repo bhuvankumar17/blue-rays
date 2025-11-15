@@ -5,7 +5,6 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
     email: "",
     phone: "",
     message: ""
@@ -37,7 +36,7 @@ export function ContactForm() {
           type: 'success',
           message: 'Thank you for your interest! We\'ll contact you soon.'
         });
-        setFormData({ name: "", email: "", phone: "", message: "" });
+        setFormData({ email: "", phone: "", message: "" });
       } else {
         setSubmitStatus({
           type: 'error',
@@ -150,23 +149,6 @@ export function ContactForm() {
                 </div>
               )}
 
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none transition-all"
-                  placeholder="John Doe"
-                  suppressHydrationWarning
-                />
-              </div>
-              
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                   Email Address *
