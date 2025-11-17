@@ -23,7 +23,7 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 relative z-20">
         <div className="max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center mb-3 sm:mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-lime-400 bg-clip-text text-transparent leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center mb-3 sm:mb-4 bg-gradient-to-r from-blue-400 via-cyan-300 via-emerald-400 to-lime-300 bg-clip-text text-transparent leading-tight animate-gradient">
             BLUE RAYS GREEN ENERGY
           </h2>
           
