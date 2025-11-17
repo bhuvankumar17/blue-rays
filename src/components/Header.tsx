@@ -6,10 +6,10 @@ import Image from "next/image";
 export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <nav className="container mx-auto px-6 py-3">
+      <nav className="container mx-auto px-4 sm:px-6 py-2 sm:py-3">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-20 h-20">
+          <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
+            <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20">
               <Image
                 src="/images/logo.jpg"
                 alt="BR Green Energy"
@@ -38,13 +38,13 @@ export function Header() {
             </Link>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             <div className="hidden lg:flex flex-col items-end">
               <span className="text-xs text-gray-500">Phone Number</span>
               <span className="text-sm font-semibold text-cyan-600">+91 9600970313</span>
             </div>
             <Link href="/contact">
-              <button suppressHydrationWarning className="px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md hover:from-cyan-600 hover:to-blue-700 transition-all font-medium shadow-lg">
+              <button suppressHydrationWarning className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md hover:from-cyan-600 hover:to-blue-700 transition-all font-medium shadow-lg text-sm sm:text-base">
                 Contact Us
               </button>
             </Link>
