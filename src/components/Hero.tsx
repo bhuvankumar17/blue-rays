@@ -23,12 +23,14 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 relative z-20">
         <div className="max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center mb-3 sm:mb-4 bg-gradient-to-r from-blue-400 via-cyan-300 to-green-400 bg-clip-text text-transparent leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center mb-3 sm:mb-4 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] leading-tight">
             BLUE RAYS GREEN ENERGY
           </h2>
           
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
-            TURN YOUR ROOF INTO A{" "}
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+            <span className="text-blue-400">TURN YOUR </span>
+            <span className="text-white">ROOF </span>
+            <span className="text-lime-400">INTO A </span>
             <span className="text-lime-400">POWER PLANT</span>
           </h1>
           

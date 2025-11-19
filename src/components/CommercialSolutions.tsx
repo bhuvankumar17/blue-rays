@@ -2,6 +2,7 @@
 
 import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function CommercialSolutions() {
   const scopeOfServices = [
@@ -59,6 +60,26 @@ export function CommercialSolutions() {
           <p className="text-lg text-cyan-700 font-semibold">
             ✓ End-to-end project management from design to maintenance
           </p>
+        </div>
+
+        {/* Commercial Installation Image */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-cyan-100">
+            <Image
+              src="/images/cover-image-1.jpg"
+              alt="Commercial Solar Panel Installation"
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <div className="p-8">
+                <h3 className="text-2xl md:text-3xl font-bold mb-2 text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">Professional Commercial Installation</h3>
+                <p className="text-lg text-lime-400 drop-shadow-[0_0_10px_rgba(163,230,53,0.6)]">High-efficiency solar systems designed for maximum ROI</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Scope of Services */}
