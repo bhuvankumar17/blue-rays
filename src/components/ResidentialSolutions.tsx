@@ -125,7 +125,7 @@ export function ResidentialSolutions() {
                     <div className="text-lg font-bold">₹ 60,000</div>
                   </div>
                   <div className="bg-white/20 rounded-lg p-3">
-                    <div className="text-sm opacity-90">6 KWP or Above</div>
+                    <div className="text-sm opacity-90">3 KWP or Above</div>
                     <div className="text-lg font-bold">₹ 78,000</div>
                   </div>
                 </div>

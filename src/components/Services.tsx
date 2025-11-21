@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export function Services() {
   return (
@@ -96,6 +97,26 @@ export function Services() {
           <div className="text-center mb-10">
             <h3 className="text-2xl font-bold text-blue-900 mb-2">Solar Installation</h3>
             <p className="text-gray-600">Professional installation components and services</p>
+          </div>
+
+          {/* Installation Image */}
+          <div className="mb-10">
+            <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-cyan-100">
+              <Image
+                src="/images/technician-installation.jpg"
+                alt="Blue Rays Green Energy Technician Installing Solar System"
+                fill
+                className="object-cover"
+                quality={85}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                <div className="p-8">
+                  <h4 className="text-2xl md:text-3xl font-bold mb-2 text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">Expert Installation Team</h4>
+                  <p className="text-lg text-white drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">Certified technicians ensuring quality installation and maintenance</p>
+                </div>
+              </div>
+            </div>
           </div>
           
           {/* Module Mounting Structure */}

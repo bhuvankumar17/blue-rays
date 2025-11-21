@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     remotePatterns: [],
     unoptimized: false,
+    qualities: [75, 85, 90, 100],
   },
 }
 

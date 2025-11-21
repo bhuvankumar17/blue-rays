@@ -12,7 +12,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-transparent z-10"></div>
         <Image
-          src="/images/cover-image-1.jpg"
+          src="/images/hero-background.jpg"
           alt="Solar Panels Installation"
           fill
           className="object-cover"
@@ -23,11 +23,11 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 relative z-20">
         <div className="max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center mb-3 sm:mb-4 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-3 sm:mb-4 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] leading-tight">
             BLUE RAYS GREEN ENERGY
           </h2>
           
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4 sm:mb-6">
             <span className="text-blue-400">TURN YOUR </span>
             <span className="text-white">ROOF </span>
             <span className="text-lime-400">INTO A </span>

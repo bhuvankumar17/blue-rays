@@ -66,7 +66,7 @@ export function CommercialSolutions() {
         <div className="max-w-6xl mx-auto mb-16">
           <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-cyan-100">
             <Image
-              src="/images/cover-image-1.jpg"
+              src="/images/commercial-hero.jpg"
               alt="Commercial Solar Panel Installation"
               fill
               className="object-cover"
@@ -110,6 +110,63 @@ export function CommercialSolutions() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Commercial Solar System Diagrams */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center">
+            Solar System Architecture
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Commercial Image 1 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
+              <div className="relative h-[300px] md:h-[350px]">
+                <Image
+                  src="/images/commercial-1.png"
+                  alt="Stand-Alone Solar PV System Architecture"
+                  fill
+                  className="object-contain p-4"
+                  quality={90}
+                />
+              </div>
+              <div className="p-4 bg-gradient-to-r from-blue-50 to-cyan-50">
+                <h3 className="text-lg font-bold text-blue-900 text-center">Stand-Alone Solar PV System</h3>
+              </div>
+            </div>
+
+            {/* Commercial Image 2 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
+              <div className="relative h-[300px] md:h-[350px]">
+                <Image
+                  src="/images/commercial-2.png"
+                  alt="On-Grid Solar Structure"
+                  fill
+                  className="object-contain p-4"
+                  quality={90}
+                />
+              </div>
+              <div className="p-4 bg-gradient-to-r from-blue-50 to-cyan-50">
+                <h3 className="text-lg font-bold text-blue-900 text-center">On-Grid Structure</h3>
+              </div>
+            </div>
+
+            {/* Off-Grid Structure */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
+              <div className="relative h-[300px] md:h-[350px]">
+                <Image
+                  src="/images/off-grid.png"
+                  alt="Off-Grid Solar Electricity Production System"
+                  fill
+                  className="object-contain p-4"
+                  quality={90}
+                />
+              </div>
+              <div className="p-4 bg-gradient-to-r from-blue-50 to-cyan-50">
+                <h3 className="text-lg font-bold text-blue-900 text-center">Off-Grid Structure</h3>
+              </div>
             </div>
           </div>
         </div>
