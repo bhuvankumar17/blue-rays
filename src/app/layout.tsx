@@ -7,9 +7,16 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BR Green Energy - Solar Panel Solutions",
-  description: "Leading provider of sustainable solar energy solutions. Professional solar panel installation for residential and commercial properties.",
-  keywords: ["solar panels", "renewable energy", "solar installation", "solar power", "clean energy", "BR green energy"],
+  title: "Blue Rays Green Energy - Solar Panel Installation in Chennai | Residential & Commercial Solar Solutions",
+  description: "Top solar panel installation company in Chennai. Get ₹30,000-₹78,000 govt subsidy. Expert residential & commercial solar solutions. Free consultation. Call +91 9600970313",
+  keywords: ["solar panels Chennai", "solar installation Chennai", "solar panel company Chennai", "residential solar Chennai", "commercial solar Chennai", "solar energy Tamil Nadu", "Blue Rays Green Energy", "solar subsidy Chennai", "rooftop solar Chennai"],
+  authors: [{ name: "Blue Rays Green Energy" }],
+  openGraph: {
+    title: "Blue Rays Green Energy - Solar Panel Installation Chennai",
+    description: "Leading solar panel installation company in Chennai. Residential & commercial solar solutions with government subsidy.",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
 export default function RootLayout({

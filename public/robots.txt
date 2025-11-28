@@ -1,0 +1,6 @@
+# robots.txt for Blue Rays Green Energy
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://www.blueraysgreenenergy.com/sitemap.xml
