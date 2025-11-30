@@ -89,13 +89,13 @@ export default function RootLayout({
     "image": "https://www.blueraysgreenenergy.com/images/hero-background.jpg",
     "telephone": "+919600970313",
     "email": "info@blueraysgreenenergy.com",
-    "priceRange": "₹₹₹",
+    "priceRange": "₹₹₹₹",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street Address",
-      "addressLocality": "Chennai",
+      "streetAddress": "Salem-Namakkal Main Road, Namakkal - 637018",
+      "addressLocality": "Namakkal",
       "addressRegion": "Tamil Nadu",
-      "postalCode": "600001",
+      "postalCode": "637018",
       "addressCountry": "IN"
     },
     "geo": {
