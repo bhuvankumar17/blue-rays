@@ -203,6 +203,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
+        <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon" />
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <Header />
