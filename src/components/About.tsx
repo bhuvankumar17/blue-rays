@@ -34,7 +34,7 @@ export function About() {
             
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
               <p>
-                At Blue Rays Green Energy, we are Tamil Nadu&apos;s leading solar energy company, dedicated to powering a sustainable future. Since our establishment in Chennai, we&apos;ve expanded across all 32 districts of Tamil Nadu, completing over 5,000+ successful solar installations.
+                At Blue Rays Green Energy, we are Tamil Nadu&apos;s leading solar energy company, dedicated to powering a sustainable future. Since our establishment in Chennai, we&apos;ve expanded across all 32 districts of Tamil Nadu, delivering quality solar installations to homes and businesses.
               </p>
               
               <p>
@@ -46,7 +46,7 @@ export function About() {
                   🌟 Why Tamil Nadu Chooses Blue Rays:
                 </p>
                 <p className="text-gray-700 text-base">
-                  5000+ Happy Customers • ISO Certified • 30-Year Warranty • Same-Day Site Survey • Complete Subsidy Assistance • Local Tamil Nadu Team
+                  Trusted Solar Company • ISO Certified • 30-Year Warranty • Same-Day Site Survey • Complete Subsidy Assistance • Local Tamil Nadu Team
                 </p>
               </div>
               

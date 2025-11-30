@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Blue Rays Green Energy - #1 Solar Panel Installation Tamil Nadu | Chennai, Coimbatore, Madurai",
-  description: "Tamil Nadu's leading solar company. Serving Chennai, Coimbatore, Madurai, Trichy, Salem. ₹30k-₹78k govt subsidy. 5000+ installations. ISO certified. Call +91 9600970313",
+  description: "Tamil Nadu's leading solar company. Serving Chennai, Coimbatore, Madurai, Trichy, Salem. ₹30k-₹78k govt subsidy. ISO certified. Expert installations. Call +91 9600970313",
   keywords: [
     "solar panels Tamil Nadu",
     "solar installation Chennai",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Blue Rays Green Energy - #1 Solar Panel Installation Tamil Nadu",
-    description: "Tamil Nadu's most trusted solar company. 5000+ installations across Chennai, Coimbatore, Madurai. Get govt subsidy up to ₹78,000.",
+    description: "Tamil Nadu's most trusted solar company. Expert installations across Chennai, Coimbatore, Madurai. Get govt subsidy up to ₹78,000.",
     type: "website",
     locale: "en_IN",
     url: "https://www.blueraysgreenenergy.com",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Blue Rays Green Energy - Solar Panel Installation Tamil Nadu",
-    description: "Tamil Nadu's leading solar company. 5000+ installations. Govt subsidy available.",
+    description: "Tamil Nadu's leading solar company. Expert installations. Govt subsidy available.",
     images: ["https://www.blueraysgreenenergy.com/images/og-image.jpg"],
   },
 };
