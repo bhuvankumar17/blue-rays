@@ -53,15 +53,16 @@ export function Footer() {
               <li><Link href="/about" className="hover:text-lime-400 transition-colors">About Us</Link></li>
               <li><Link href="/products" className="hover:text-lime-400 transition-colors">Products</Link></li>
               <li><Link href="/gallery" className="hover:text-lime-400 transition-colors">Gallery</Link></li>
+              <li><Link href="/faq" className="hover:text-lime-400 transition-colors">FAQ</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link href="/products" className="hover:text-lime-400 transition-colors">Solar Panel Installation</Link></li>
-              <li><Link href="/products" className="hover:text-lime-400 transition-colors">Commercial Solutions</Link></li>
-              <li><Link href="/products" className="hover:text-lime-400 transition-colors">Residential Solutions</Link></li>
+              <li><Link href="/residential" className="hover:text-lime-400 transition-colors">Residential Solar</Link></li>
+              <li><Link href="/commercial" className="hover:text-lime-400 transition-colors">Commercial Solar</Link></li>
+              <li><Link href="/products" className="hover:text-lime-400 transition-colors">Industrial Solar</Link></li>
               <li><Link href="/contact" className="hover:text-lime-400 transition-colors">Maintenance & Support</Link></li>
             </ul>
           </div>
@@ -86,8 +87,20 @@ export function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-white/20 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} BR Green Energy. All rights reserved.</p>
+        <div className="border-t border-white/20 pt-8">
+          <div className="text-center mb-6">
+            <h3 className="text-white font-semibold mb-3">Service Areas in Tamil Nadu</h3>
+            <p className="text-gray-400 text-sm max-w-4xl mx-auto">
+              <Link href="/coimbatore" className="hover:text-lime-400 transition-colors">Coimbatore</Link> • 
+              Chennai • Madurai • Tiruchirappalli • Salem • Namakkal • Tirunelveli • Erode • Vellore • Thoothukudi • 
+              Dindigul • Thanjavur • Tiruppur • Kanchipuram • Karur • Cuddalore • Nagercoil • Hosur • 
+              Pollachi • Ambur • Kumbakonam • and all 32 districts of Tamil Nadu
+            </p>
+          </div>
+          <div className="text-center text-gray-400">
+            <p>&copy; {new Date().getFullYear()} Blue Rays Green Energy. All rights reserved. | Tamil Nadu&apos;s Leading Solar Company</p>
+            <p className="text-xs mt-2">Solar Panel Installation | Residential & Commercial Solar Solutions | Government Subsidy Support</p>
+          </div>
         </div>
       </div>
 

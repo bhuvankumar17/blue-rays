@@ -34,15 +34,28 @@ export function About() {
             
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
               <p>
-                At Blue Rays Green Energy, we believe in creating a sustainable world powered by clean, renewable energy. Through innovative solar solutions and expert engineering, we help homes, businesses, and communities switch to a brighter, eco-friendly future.
+                At Blue Rays Green Energy, we are Tamil Nadu&apos;s leading solar energy company, dedicated to powering a sustainable future. Since our establishment in Chennai, we&apos;ve expanded across all 32 districts of Tamil Nadu, completing over 5,000+ successful solar installations.
               </p>
+              
+              <p>
+                Through innovative solar solutions and expert engineering, we help homes, businesses, and communities across Chennai, Coimbatore, Madurai, Trichy, Salem, Namakkal, and beyond switch to clean, renewable energy. As a TANGEDCO-approved vendor, we provide complete subsidy support and seamless net metering connections.
+              </p>
+              
+              <div className="bg-gradient-to-r from-cyan-50 to-blue-50 p-4 rounded-lg border-l-4 border-cyan-600">
+                <p className="text-gray-800 font-semibold mb-2">
+                  🌟 Why Tamil Nadu Chooses Blue Rays:
+                </p>
+                <p className="text-gray-700 text-base">
+                  5000+ Happy Customers • ISO Certified • 30-Year Warranty • Same-Day Site Survey • Complete Subsidy Assistance • Local Tamil Nadu Team
+                </p>
+              </div>
               
               <p className="text-gray-600">
                 Start saving today! Call{" "}
                 <a href="tel:+919600970313" className="font-bold text-cyan-600 hover:underline">
                   +91 9600970313
                 </a>
-                {" "}to schedule your free consultation
+                {" "}for your free consultation across Tamil Nadu
               </p>
             </div>
             

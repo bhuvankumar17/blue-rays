@@ -1,6 +1,29 @@
-# robots.txt for Blue Rays Green Energy
+# robots.txt for Blue Rays Green Energy - Tamil Nadu's Leading Solar Company
 User-agent: *
+Allow: /
+Allow: /images/
+Allow: /residential
+Allow: /commercial
+Allow: /products
+Allow: /gallery
+Allow: /contact
+Allow: /about
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*?*
+
+# Crawl-delay for courtesy
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.blueraysgreenenergy.com/sitemap.xml
+
+# Googlebot specific
+User-agent: Googlebot
 Allow: /
 Disallow: /api/
 
-Sitemap: https://www.blueraysgreenenergy.com/sitemap.xml
+# Bingbot specific
+User-agent: Bingbot
+Allow: /
+Disallow: /api/

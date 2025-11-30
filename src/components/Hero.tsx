@@ -34,10 +34,19 @@ export function Hero() {
             <span className="text-lime-400">POWER PLANT</span>
           </h1>
           
-          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-4 leading-relaxed">
             Transform your property with sustainable solar energy solutions. 
             Save on electricity costs while contributing to a cleaner environment.
           </p>
+          
+          <div className="bg-yellow-400/90 backdrop-blur-sm rounded-lg p-3 sm:p-4 mb-6 sm:mb-8">
+            <p className="text-blue-900 font-bold text-sm sm:text-base md:text-lg">
+              🌟 Serving All of Tamil Nadu | Chennai • Coimbatore • Madurai • Trichy • Salem • Namakkal
+            </p>
+            <p className="text-blue-800 text-xs sm:text-sm mt-1">
+              ✓ Free Site Survey • ✓ Govt Subsidy up to ₹78,000 • ✓ Same Day Response
+            </p>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact">
