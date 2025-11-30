@@ -48,6 +48,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.blueraysgreenenergy.com',
   },
+  icons: {
+    icon: '/images/logo.jpg',
+    shortcut: '/images/logo.jpg',
+    apple: '/images/logo.jpg',
+  },
   openGraph: {
     title: "Blue Rays Green Energy - #1 Solar Panel Installation Tamil Nadu",
     description: "Tamil Nadu's most trusted solar company. Expert installations across Chennai, Coimbatore, Madurai. Get govt subsidy up to ₹78,000.",
