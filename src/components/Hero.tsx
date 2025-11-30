@@ -23,11 +23,11 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 relative z-20">
         <div className="max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-3 sm:mb-4 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-center mb-3 sm:mb-4 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] leading-tight px-2">
             BLUE RAYS GREEN ENERGY
           </h2>
           
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4 sm:mb-6">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-4 sm:mb-6 text-center sm:text-left">
             <span className="text-blue-400">TURN YOUR </span>
             <span className="text-white">ROOF </span>
             <span className="text-lime-400">INTO A </span>
@@ -93,27 +93,27 @@ export function Hero() {
       </div>
 
       {/* Mobile Our Solutions - Bottom for small screens */}
-      <div className="absolute bottom-16 sm:bottom-24 left-1/2 transform -translate-x-1/2 z-20 w-full max-w-lg px-4 sm:px-6 lg:hidden">
-        <div className="text-center">
-          <p className="text-lime-400 text-sm sm:text-base mb-3 sm:mb-4 uppercase tracking-wider font-bold">Our Solutions</p>
-          <div className="grid grid-cols-2 gap-2 sm:gap-4">
+      <div className="absolute bottom-20 sm:bottom-24 left-1/2 transform -translate-x-1/2 z-20 w-full max-w-lg px-4 sm:px-6 lg:hidden">
+        <div className="text-center bg-gradient-to-b from-transparent via-blue-900/40 to-blue-900/60 backdrop-blur-sm rounded-2xl py-4 px-2">
+          <p className="text-lime-400 text-base sm:text-lg mb-3 uppercase tracking-wider font-bold">Our Solutions</p>
+          <div className="grid grid-cols-2 gap-3 sm:gap-4">
             <Link href="/residential" className="group">
-              <button suppressHydrationWarning className="w-full px-3 sm:px-6 py-3 sm:py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-lime-400 transition-all text-sm sm:text-base md:text-lg font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
+              <button suppressHydrationWarning className="w-full px-4 sm:px-6 py-4 sm:py-5 bg-white/20 backdrop-blur-md border-2 border-white/50 text-white rounded-xl hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-sm sm:text-base font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
                 Residential
               </button>
             </Link>
             <Link href="/commercial" className="group">
-              <button suppressHydrationWarning className="w-full px-3 sm:px-6 py-3 sm:py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-lime-400 transition-all text-sm sm:text-base md:text-lg font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
+              <button suppressHydrationWarning className="w-full px-4 sm:px-6 py-4 sm:py-5 bg-white/20 backdrop-blur-md border-2 border-white/50 text-white rounded-xl hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-sm sm:text-base font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
                 Commercial
               </button>
             </Link>
             <Link href="/products" className="group">
-              <button suppressHydrationWarning className="w-full px-3 sm:px-6 py-3 sm:py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-lime-400 transition-all text-sm sm:text-base md:text-lg font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
+              <button suppressHydrationWarning className="w-full px-4 sm:px-6 py-4 sm:py-5 bg-white/20 backdrop-blur-md border-2 border-white/50 text-white rounded-xl hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-sm sm:text-base font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
                 Industrial
               </button>
             </Link>
             <Link href="/products" className="group">
-              <button suppressHydrationWarning className="w-full px-3 sm:px-6 py-3 sm:py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-lime-400 transition-all text-sm sm:text-base md:text-lg font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
+              <button suppressHydrationWarning className="w-full px-4 sm:px-6 py-4 sm:py-5 bg-white/20 backdrop-blur-md border-2 border-white/50 text-white rounded-xl hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-sm sm:text-base font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
                 Agricultural
               </button>
             </Link>
