@@ -7,10 +7,10 @@ import { useRouter } from "next/navigation";
 export function Hero() {
   const router = useRouter();
   return (
-    <section id="home" className="relative pt-20 pb-0 min-h-screen flex items-center">
+    <section id="home" className="relative pt-20 pb-32 min-h-screen flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-blue-900/70 to-blue-900/50 z-10"></div>
         <Image
           src="/images/hero-background.jpg"
           alt="Solar Panels Installation"
@@ -21,41 +21,41 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 relative z-20">
-        <div className="max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-center mb-3 sm:mb-4 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] leading-tight px-2">
+      <div className="container mx-auto px-4 sm:px-6 relative z-20 w-full">
+        <div className="max-w-3xl mx-auto text-center lg:text-left lg:mx-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-3 sm:mb-4 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] leading-tight px-2">
             BLUE RAYS GREEN ENERGY
           </h2>
           
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-4 sm:mb-6 text-center sm:text-left">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-4 sm:mb-6">
             <span className="text-blue-400">TURN YOUR </span>
             <span className="text-white">ROOF </span>
             <span className="text-lime-400">INTO A </span>
             <span className="text-lime-400">POWER PLANT</span>
           </h1>
           
-          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-4 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-4 leading-relaxed px-2 sm:px-0">
             Transform your property with sustainable solar energy solutions. 
             Save on electricity costs while contributing to a cleaner environment.
           </p>
           
-          <div className="bg-yellow-400/90 backdrop-blur-sm rounded-lg p-3 sm:p-4 mb-6 sm:mb-8">
-            <p className="text-blue-900 font-bold text-sm sm:text-base md:text-lg">
+          <div className="bg-yellow-400/90 backdrop-blur-sm rounded-lg p-3 sm:p-4 mb-6 sm:mb-8 mx-2 sm:mx-0">
+            <p className="text-blue-900 font-bold text-xs sm:text-sm md:text-base lg:text-lg">
               🌟 Serving All of Tamil Nadu | Chennai • Coimbatore • Madurai • Trichy • Salem • Namakkal
             </p>
-            <p className="text-blue-800 text-xs sm:text-sm mt-1">
+            <p className="text-blue-800 text-[10px] sm:text-xs md:text-sm mt-1">
               ✓ Free Site Survey • ✓ Govt Subsidy up to ₹78,000 • ✓ Same Day Response
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/contact">
-              <button suppressHydrationWarning className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 font-semibold shadow-xl text-lg">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 px-2 sm:px-0">
+            <Link href="/contact" className="w-full sm:w-auto">
+              <button suppressHydrationWarning className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 font-semibold shadow-xl text-base sm:text-lg">
                 Get Free Quote
               </button>
             </Link>
-            <Link href="/about">
-              <button suppressHydrationWarning className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-lg hover:bg-white/20 transition-all font-semibold text-lg">
+            <Link href="/about" className="w-full sm:w-auto">
+              <button suppressHydrationWarning className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-lg hover:bg-white/20 transition-all font-semibold text-base sm:text-lg">
                 Learn More
               </button>
             </Link>
@@ -93,38 +93,33 @@ export function Hero() {
       </div>
 
       {/* Mobile Our Solutions - Bottom for small screens */}
-      <div className="absolute bottom-20 sm:bottom-24 left-1/2 transform -translate-x-1/2 z-20 w-full max-w-lg px-4 sm:px-6 lg:hidden">
-        <div className="text-center bg-gradient-to-b from-transparent via-blue-900/40 to-blue-900/60 backdrop-blur-sm rounded-2xl py-4 px-2">
-          <p className="text-lime-400 text-base sm:text-lg mb-3 uppercase tracking-wider font-bold">Our Solutions</p>
-          <div className="grid grid-cols-2 gap-3 sm:gap-4">
-            <Link href="/residential" className="group">
-              <button suppressHydrationWarning className="w-full px-4 sm:px-6 py-4 sm:py-5 bg-white/20 backdrop-blur-md border-2 border-white/50 text-white rounded-xl hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-sm sm:text-base font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
-                Residential
-              </button>
-            </Link>
-            <Link href="/commercial" className="group">
-              <button suppressHydrationWarning className="w-full px-4 sm:px-6 py-4 sm:py-5 bg-white/20 backdrop-blur-md border-2 border-white/50 text-white rounded-xl hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-sm sm:text-base font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
-                Commercial
-              </button>
-            </Link>
-            <Link href="/products" className="group">
-              <button suppressHydrationWarning className="w-full px-4 sm:px-6 py-4 sm:py-5 bg-white/20 backdrop-blur-md border-2 border-white/50 text-white rounded-xl hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-sm sm:text-base font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
-                Industrial
-              </button>
-            </Link>
-            <Link href="/products" className="group">
-              <button suppressHydrationWarning className="w-full px-4 sm:px-6 py-4 sm:py-5 bg-white/20 backdrop-blur-md border-2 border-white/50 text-white rounded-xl hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-sm sm:text-base font-bold shadow-xl group-hover:transform group-hover:scale-105 text-center">
-                Agricultural
-              </button>
-            </Link>
+      <div className="absolute bottom-4 sm:bottom-6 left-0 right-0 z-20 px-4 lg:hidden">
+        <div className="max-w-sm mx-auto">
+          <div className="text-center bg-blue-900/85 backdrop-blur-md rounded-xl py-3 px-3 shadow-2xl border border-white/20">
+            <p className="text-lime-400 text-xs sm:text-sm mb-2 uppercase tracking-wider font-bold">Our Solutions</p>
+            <div className="grid grid-cols-2 gap-2">
+              <Link href="/residential" className="group">
+                <button suppressHydrationWarning className="w-full px-2 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-white rounded-lg hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-[11px] sm:text-xs font-bold shadow-md group-hover:transform group-hover:scale-105 text-center">
+                  Residential
+                </button>
+              </Link>
+              <Link href="/commercial" className="group">
+                <button suppressHydrationWarning className="w-full px-2 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-white rounded-lg hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-[11px] sm:text-xs font-bold shadow-md group-hover:transform group-hover:scale-105 text-center">
+                  Commercial
+                </button>
+              </Link>
+              <Link href="/products" className="group">
+                <button suppressHydrationWarning className="w-full px-2 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-white rounded-lg hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-[11px] sm:text-xs font-bold shadow-md group-hover:transform group-hover:scale-105 text-center">
+                  Industrial
+                </button>
+              </Link>
+              <Link href="/products" className="group">
+                <button suppressHydrationWarning className="w-full px-2 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-white rounded-lg hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-[11px] sm:text-xs font-bold shadow-md group-hover:transform group-hover:scale-105 text-center">
+                  Agricultural
+                </button>
+              </Link>
+            </div>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-        <div className="w-8 h-12 border-2 border-white rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-3 bg-white rounded-full animate-bounce"></div>
         </div>
       </div>
     </section>

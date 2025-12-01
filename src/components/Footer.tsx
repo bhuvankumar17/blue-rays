@@ -37,7 +37,7 @@ export function Footer() {
               <a href="#" className="h-10 w-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors group">
                 <Twitter className="h-5 w-5 group-hover:text-blue-900" />
               </a>
-              <a href="#" className="h-10 w-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors group">
+              <a href="https://www.instagram.com/blue_rays_green_energy?igsh=MWQ5cnZ6czk5eXZ4cw==" target="_blank" rel="noopener noreferrer" className="h-10 w-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors group">
                 <Instagram className="h-5 w-5 group-hover:text-blue-900" />
               </a>
               <a href="#" className="h-10 w-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors group">
