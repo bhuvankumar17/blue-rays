@@ -28,9 +28,13 @@ export function About() {
               </span>
             </div>
             
-            <h2 className="text-4xl font-bold text-blue-900 leading-tight">
-              Powering a Greener Tomorrow
+            <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 leading-tight">
+              Solar Company in Namakkal
             </h2>
+            
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Bluerays Green Energy is a trusted solar company in Namakkal, offering efficient, affordable, and long-lasting solar power solutions for homes and offices.
+            </p>
             
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
               <p>

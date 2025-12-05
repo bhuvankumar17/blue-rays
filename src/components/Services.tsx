@@ -8,11 +8,12 @@ export function Services() {
     <section id="products" className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold text-blue-900 mb-4">
-            Our Products
+          <span className="text-sm font-semibold text-cyan-600 uppercase tracking-wide">PRODUCTS</span>
+          <h2 className="text-4xl font-bold text-blue-900 mb-4 mt-2">
+            Solar Panels for Residential Buildings
           </h2>
           <p className="text-lg text-gray-600">
-            We adopt an individual approach with each and every client and our business model is built on the following key promises.
+            Bluerays Green Energy offers premium solar panels for residential buildings, helping homeowners enjoy clean, efficient, and sustainable energy every day.
           </p>
         </div>
         

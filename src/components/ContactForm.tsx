@@ -66,11 +66,12 @@ export function ContactForm() {
     <section id="contact" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold text-blue-900 mb-4">
-            Get Your Free Consultation
+          <span className="text-sm font-semibold text-cyan-600 uppercase tracking-wide">CONTACT US</span>
+          <h2 className="text-4xl font-bold text-blue-900 mb-4 mt-2">
+            Solar Panel Services Near Me
           </h2>
           <p className="text-xl text-gray-600">
-            Ready to make the switch to solar? Contact us today for a free assessment and quote
+            If you&apos;re searching for solar panel services near me, Bluerays Green Energy delivers quick, affordable, and expert installation, repair, and maintenance.
           </p>
         </div>
         

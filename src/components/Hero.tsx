@@ -22,7 +22,7 @@ export function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 relative z-20 w-full">
-        <div className="max-w-3xl mx-auto text-center lg:text-left lg:mx-0">
+        <div className="max-w-3xl mx-auto mb-5 text-center lg:text-left lg:mx-0">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-3 sm:mb-4 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] leading-tight px-2">
             BLUE RAYS GREEN ENERGY
           </h2>
