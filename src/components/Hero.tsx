@@ -48,17 +48,17 @@ export function Hero() {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 px-2 sm:px-0">
-            <Link href="/contact" className="w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 px-2 sm:px-0 mb-32 lg:mb-0">
+            <a href="#contact" className="w-full sm:w-auto">
               <button suppressHydrationWarning className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 font-semibold shadow-xl text-base sm:text-lg">
                 Get Free Quote
               </button>
-            </Link>
-            <Link href="/about" className="w-full sm:w-auto">
+            </a>
+            <a href="#about" className="w-full sm:w-auto">
               <button suppressHydrationWarning className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-lg hover:bg-white/20 transition-all font-semibold text-base sm:text-lg">
                 Learn More
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -68,26 +68,26 @@ export function Hero() {
         <div className="flex flex-col items-center space-y-6">
           <p className="text-lime-400 text-xl mb-4 uppercase tracking-wider font-bold text-center">Our Solutions</p>
           <div className="flex flex-col space-y-5 items-center">
-            <Link href="/residential" className="group">
+            <a href="#products" className="group">
               <button suppressHydrationWarning className="px-12 py-6 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-2xl hover:bg-white/20 hover:border-lime-400 transition-all text-xl font-bold shadow-xl group-hover:transform group-hover:scale-110 w-[220px] text-center">
                 Residential
               </button>
-            </Link>
-            <Link href="/commercial" className="group">
+            </a>
+            <a href="#products" className="group">
               <button suppressHydrationWarning className="px-12 py-6 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-2xl hover:bg-white/20 hover:border-lime-400 transition-all text-xl font-bold shadow-xl group-hover:transform group-hover:scale-110 w-[220px] text-center">
                 Commercial
               </button>
-            </Link>
-            <Link href="/products" className="group">
+            </a>
+            <a href="#products" className="group">
               <button suppressHydrationWarning className="px-12 py-6 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-2xl hover:bg-white/20 hover:border-lime-400 transition-all text-xl font-bold shadow-xl group-hover:transform group-hover:scale-110 w-[220px] text-center">
                 Industrial
               </button>
-            </Link>
-            <Link href="/products" className="group">
+            </a>
+            <a href="#products" className="group">
               <button suppressHydrationWarning className="px-12 py-6 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-2xl hover:bg-white/20 hover:border-lime-400 transition-all text-xl font-bold shadow-xl group-hover:transform group-hover:scale-110 w-[220px] text-center">
                 Agricultural
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -98,26 +98,26 @@ export function Hero() {
           <div className="text-center bg-blue-900/85 backdrop-blur-md rounded-xl py-3 px-3 shadow-2xl border border-white/20">
             <p className="text-lime-400 text-xs sm:text-sm mb-2 uppercase tracking-wider font-bold">Our Solutions</p>
             <div className="grid grid-cols-2 gap-2">
-              <Link href="/residential" className="group">
+              <a href="#products" className="group">
                 <button suppressHydrationWarning className="w-full px-2 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-white rounded-lg hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-[11px] sm:text-xs font-bold shadow-md group-hover:transform group-hover:scale-105 text-center">
                   Residential
                 </button>
-              </Link>
-              <Link href="/commercial" className="group">
+              </a>
+              <a href="#products" className="group">
                 <button suppressHydrationWarning className="w-full px-2 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-white rounded-lg hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-[11px] sm:text-xs font-bold shadow-md group-hover:transform group-hover:scale-105 text-center">
                   Commercial
                 </button>
-              </Link>
-              <Link href="/products" className="group">
+              </a>
+              <a href="#products" className="group">
                 <button suppressHydrationWarning className="w-full px-2 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-white rounded-lg hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-[11px] sm:text-xs font-bold shadow-md group-hover:transform group-hover:scale-105 text-center">
                   Industrial
                 </button>
-              </Link>
-              <Link href="/products" className="group">
+              </a>
+              <a href="#products" className="group">
                 <button suppressHydrationWarning className="w-full px-2 py-2.5 bg-white/25 backdrop-blur-sm border border-white/40 text-white rounded-lg hover:bg-lime-400 hover:text-blue-900 hover:border-lime-400 transition-all text-[11px] sm:text-xs font-bold shadow-md group-hover:transform group-hover:scale-105 text-center">
                   Agricultural
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -81,15 +81,6 @@ function GallerySection() {
           <h3 className="text-3xl font-bold text-blue-900 mb-6 text-center">
             Installation Gallery
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
-              <Image
-                src="/images/commercial-hero.jpg"
-                alt="Commercial Installation"
-                fill
-                className="object-cover"
-              />
-            </div>
             <div className="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
               <Image
                 src="/images/technician-installation.jpg"
@@ -98,15 +89,6 @@ function GallerySection() {
                 className="object-cover"
               />
             </div>
-            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
-              <Image
-                src="/images/hero-background.jpg"
-                alt="Solar Panel Field"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </section>
