@@ -41,7 +41,7 @@ function GallerySection() {
         </div>
 
         {/* Video Section */}
-        <div className="max-w-6xl mx-auto mb-16">
+        <div className="max-w-6xl mx-auto mb-16 px-4 sm:px-0">
           <h3 className="text-3xl font-bold text-blue-900 mb-8 text-center">
             Featured Project Videos
           </h3>
@@ -77,7 +77,7 @@ function GallerySection() {
         </div>
 
         {/* Images Grid */}
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-4 sm:px-0">
           <h3 className="text-3xl font-bold text-blue-900 mb-6 text-center">
             Installation Gallery
           </h3>

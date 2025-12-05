@@ -8,7 +8,7 @@ export function About() {
     <section id="about" className="py-20 px-4 bg-white">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
+          <div className="relative px-4 sm:px-0">
             <div className="aspect-[4/3] bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/images/residential-solar-1.jpg"
