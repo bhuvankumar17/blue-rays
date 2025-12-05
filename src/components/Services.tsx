@@ -127,8 +127,8 @@ export function Services() {
             <div className="flex justify-center">
               <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 border-2 border-gray-100 hover:border-lime-400 max-w-md w-full">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-900 mb-3">Hot Dip Galvanized</div>
-                  <div className="text-sm text-gray-600 mb-4">Premium Mounting Structure</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900 mb-3">Hot Dip Galvanized</div>
+                  <div className="text-xs sm:text-sm text-gray-600 mb-4">Premium Mounting Structure</div>
                   <div className="bg-gradient-to-br from-lime-50 to-green-50 rounded-lg p-4">
                     <ul className="text-left space-y-2 text-gray-700">
                       <li className="flex items-start">
