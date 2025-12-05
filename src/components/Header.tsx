@@ -77,41 +77,45 @@ export function Header() {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
+        <div 
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <div className="mt-4 pb-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4 pt-4">
               <a
                 href="#home"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2"
+                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Home
               </a>
               <a
                 href="#about"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2"
+                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 About Us
               </a>
               <a
                 href="#products"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2"
+                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Products
               </a>
               <a
                 href="#gallery"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2"
+                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Gallery
               </a>
               <a
                 href="#contact"
                 onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2"
+                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Contact
               </a>
@@ -128,7 +132,7 @@ export function Header() {
               </a>
             </div>
           </div>
-        )}
+        </div>
       </nav>
     </header>
   );
