@@ -49,16 +49,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.blueraysgreenenergy.com',
   },
   icons: {
-    icon: [
-      { url: '/images/logo/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/images/logo/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-    ],
-    shortcut: '/images/logo/favicon.ico',
-    apple: '/images/logo/apple-touch-icon.png',
-    other: [
-      { rel: 'android-chrome-192x192', url: '/images/logo/android-chrome-192x192.png' },
-      { rel: 'android-chrome-512x512', url: '/images/logo/android-chrome-512x512.png' },
-    ],
+    icon: '/favicon.ico',
   },
   openGraph: {
     title: "Blue Rays Green Energy - #1 Solar Panel Installation Tamil Nadu",
