@@ -23,18 +23,18 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 relative z-20 w-full">
         <div className="max-w-3xl mx-auto mb-5 text-center lg:text-left lg:mx-0">
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-4 sm:mb-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-            <span className="text-blue-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">TURN YOUR </span>
-            <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">ROOF </span>
-            <span className="text-lime-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">INTO A </span>
-            <span className="text-lime-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">POWER PLANT</span>
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-4 sm:mb-6">
+            <span className="text-blue-400">TURN YOUR </span>
+            <span className="text-white">ROOF </span>
+            <span className="text-lime-400">INTO A </span>
+            <span className="text-lime-400">POWER PLANT</span>
           </h1>
           
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-3 sm:mb-4 text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)] leading-tight px-2" style={{textShadow: '0 0 30px rgba(0,0,0,0.9), 0 4px 20px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,0.9)'}}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-3 sm:mb-4 text-white leading-tight px-2">
             BLUE RAYS GREEN ENERGY
           </h2>
           
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white mb-4 leading-relaxed px-2 sm:px-0 font-semibold drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]" style={{textShadow: '0 2px 8px rgba(0,0,0,0.9), 1px 1px 3px rgba(0,0,0,0.8)'}}>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-4 leading-relaxed px-2 sm:px-0">
             Transform your property with sustainable solar energy solutions. 
             Save on electricity costs while contributing to a cleaner environment.
           </p>
