@@ -24,10 +24,8 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 relative z-20 w-full">
         <div className="max-w-3xl mx-auto mb-5 text-center lg:text-left lg:mx-0">
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-4 sm:mb-6">
-            <span className="text-blue-400">TURN YOUR </span>
-            <span className="text-white">ROOF </span>
-            <span className="text-lime-400">INTO A </span>
-            <span className="text-lime-400">POWER PLANT</span>
+            <span className="text-cyan-400">TURN YOUR ROOF </span>
+            <span className="text-lime-400">INTO A POWER PLANT</span>
           </h1>
           
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-3 sm:mb-4 text-white leading-tight px-2">
