@@ -76,20 +76,6 @@ function GallerySection() {
           </div>
         </div>
 
-        {/* Images Grid */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-0">
-          <h3 className="text-3xl font-bold text-blue-900 mb-6 text-center">
-            Installation Gallery
-          </h3>
-            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
-              <Image
-                src="/images/technician-installation.jpg"
-                alt="Technician at Work"
-                fill
-                className="object-cover"
-              />
-            </div>
-        </div>
       </div>
     </section>
   );
