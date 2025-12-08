@@ -33,21 +33,21 @@ export function Header() {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <Link href="/#home" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Home
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            </Link>
+            <Link href="/#about" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               About Us
-            </a>
-            <a href="#products" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            </Link>
+            <Link href="/#products" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Products
-            </a>
-            <a href="#gallery" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            </Link>
+            <Link href="/#gallery" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Gallery
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            </Link>
+            <Link href="/#contact" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Contact
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center space-x-2 sm:space-x-4">
@@ -55,11 +55,11 @@ export function Header() {
               <span className="text-xs text-gray-500">Phone Number</span>
               <span className="text-sm font-semibold text-cyan-600">+91 9600970313</span>
             </div>
-            <a href="#contact" className="hidden sm:block">
+            <Link href="/#contact" className="hidden sm:block">
               <button suppressHydrationWarning className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md hover:from-cyan-600 hover:to-blue-700 transition-all font-medium shadow-lg text-sm sm:text-base">
                 Contact Us
               </button>
-            </a>
+            </Link>
             
             {/* Mobile Menu Button */}
             <button
@@ -84,52 +84,52 @@ export function Header() {
         >
           <div className="mt-4 pb-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4 pt-4">
-              <a
-                href="#home"
+              <Link
+                href="/#home"
                 onClick={closeMenu}
                 className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Home
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                href="/#about"
                 onClick={closeMenu}
                 className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 About Us
-              </a>
-              <a
-                href="#products"
+              </Link>
+              <Link
+                href="/#products"
                 onClick={closeMenu}
                 className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Products
-              </a>
-              <a
-                href="#gallery"
+              </Link>
+              <Link
+                href="/#gallery"
                 onClick={closeMenu}
                 className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Gallery
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                href="/#contact"
                 onClick={closeMenu}
                 className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Contact
-              </a>
+              </Link>
               <div className="pt-2 border-t border-gray-200">
                 <span className="text-xs text-gray-500">Phone Number</span>
                 <a href="tel:+919600970313" className="block text-lg font-semibold text-cyan-600 mt-1">
                   +91 9600970313
                 </a>
               </div>
-              <a href="#contact" onClick={closeMenu}>
+              <Link href="/#contact" onClick={closeMenu}>
                 <button className="w-full px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md hover:from-cyan-600 hover:to-blue-700 transition-all font-medium shadow-lg">
                   Contact Us
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
