@@ -21,7 +21,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 relative z-20 w-full">
+      <div className="container mx-auto px-4 sm:px-6 relative z-20 w-full mt-20 sm:mt-24 md:mt-28 lg:mt-32">
         <div className="max-w-3xl mx-auto mb-5 text-center lg:text-left lg:mx-0">
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-4 sm:mb-6">
             <span className="text-cyan-400">TURN YOUR ROOF </span>
