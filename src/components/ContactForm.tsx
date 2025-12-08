@@ -64,7 +64,7 @@ export function ContactForm() {
 
   return (
     <section id="contact" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-sm font-semibold text-cyan-600 uppercase tracking-wide">CONTACT US</span>
           <h2 className="text-4xl font-bold text-blue-900 mb-4 mt-2">
@@ -75,7 +75,7 @@ export function ContactForm() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 max-w-6xl mx-auto">
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-blue-900 mb-6">

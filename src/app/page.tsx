@@ -29,7 +29,7 @@ export default function Home() {
 function GallerySection() {
   return (
     <section id="gallery" className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <span className="text-sm font-semibold text-cyan-600 uppercase tracking-wide">GALLERY</span>
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 mt-2">

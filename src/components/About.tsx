@@ -6,8 +6,8 @@ import Image from "next/image";
 export function About() {
   return (
     <section id="about" className="py-20 px-4 bg-white">
-      <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto max-w-7xl">
+        <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-center">
           <div className="relative px-4 sm:px-0">
             <div className="aspect-[4/3] bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl overflow-hidden shadow-xl">
               <Image
