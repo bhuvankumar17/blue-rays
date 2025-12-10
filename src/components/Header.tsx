@@ -33,19 +33,19 @@ export function Header() {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/#home" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <Link href="/" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Home
             </Link>
-            <Link href="/#about" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <Link href="/about" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               About Us
             </Link>
-            <Link href="/#products" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <Link href="/products" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Products
             </Link>
-            <Link href="/#gallery" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <Link href="/gallery" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Gallery
             </Link>
-            <Link href="/#contact" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <Link href="/contact" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Contact
             </Link>
           </div>
@@ -55,7 +55,7 @@ export function Header() {
               <span className="text-xs text-gray-500">Phone Number</span>
               <span className="text-sm font-semibold text-cyan-600">+91 9600970313</span>
             </div>
-            <Link href="/#contact" className="hidden sm:block">
+            <Link href="/contact" className="hidden sm:block">
               <button suppressHydrationWarning className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md hover:from-cyan-600 hover:to-blue-700 transition-all font-medium shadow-lg text-sm sm:text-base">
                 Contact Us
               </button>

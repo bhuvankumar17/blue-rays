@@ -47,16 +47,16 @@ export function Hero() {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 px-2 sm:px-0 mb-32 lg:mb-0">
-            <a href="#contact" className="w-full sm:w-auto">
+            <Link href="/contact" className="w-full sm:w-auto">
               <button suppressHydrationWarning className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 font-semibold shadow-xl text-base sm:text-lg">
                 Get Free Quote
               </button>
-            </a>
-            <a href="#about" className="w-full sm:w-auto">
+            </Link>
+            <Link href="/about" className="w-full sm:w-auto">
               <button suppressHydrationWarning className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-lg hover:bg-white/20 transition-all font-semibold text-base sm:text-lg">
                 Learn More
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
