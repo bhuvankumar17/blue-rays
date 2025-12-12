@@ -4,9 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +16,18 @@ export function Header() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const handleMobileNavigation = (hash: string) => {
+    closeMenu();
+    // Navigate to home page first, then scroll to section
+    router.push('/');
+    setTimeout(() => {
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   return (
@@ -84,52 +98,48 @@ export function Header() {
         >
           <div className="mt-4 pb-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4 pt-4">
-              <Link
-                href="/#home"
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
+              <button
+                onClick={() => handleMobileNavigation('home')}
+                className="text-left text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Home
-              </Link>
-              <Link
-                href="/#about"
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
+              </button>
+              <button
+                onClick={() => handleMobileNavigation('about')}
+                className="text-left text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 About Us
-              </Link>
-              <Link
-                href="/#products"
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
+              </button>
+              <button
+                onClick={() => handleMobileNavigation('products')}
+                className="text-left text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Products
-              </Link>
-              <Link
-                href="/#gallery"
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
+              </button>
+              <button
+                onClick={() => handleMobileNavigation('gallery')}
+                className="text-left text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Gallery
-              </Link>
-              <Link
-                href="/#contact"
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
+              </button>
+              <button
+                onClick={() => handleMobileNavigation('contact')}
+                className="text-left text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 transform transition-transform duration-200 hover:translate-x-2"
               >
                 Contact
-              </Link>
+              </button>
               <div className="pt-2 border-t border-gray-200">
                 <span className="text-xs text-gray-500">Phone Number</span>
                 <a href="tel:+919600970313" className="block text-lg font-semibold text-cyan-600 mt-1">
                   +91 9600970313
                 </a>
               </div>
-              <Link href="/#contact" onClick={closeMenu}>
-                <button className="w-full px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md hover:from-cyan-600 hover:to-blue-700 transition-all font-medium shadow-lg">
-                  Contact Us
-                </button>
-              </Link>
+              <button 
+                onClick={() => handleMobileNavigation('contact')}
+                className="w-full px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md hover:from-cyan-600 hover:to-blue-700 transition-all font-medium shadow-lg"
+              >
+                Contact Us
+              </button>
             </div>
           </div>
         </div>
