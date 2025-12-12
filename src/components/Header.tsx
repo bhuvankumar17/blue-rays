@@ -1,14 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [pendingScroll, setPendingScroll] = useState<string | null>(null);
   const router = useRouter();
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,16 +20,34 @@ export function Header() {
     setIsMenuOpen(false);
   };
 
+  // Handle scroll after navigation
+  useEffect(() => {
+    if (pendingScroll && pathname === '/') {
+      const timer = setTimeout(() => {
+        const element = document.getElementById(pendingScroll);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+        setPendingScroll(null);
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [pathname, pendingScroll]);
+
   const handleMobileNavigation = (hash: string) => {
     closeMenu();
-    // Navigate to home page first, then scroll to section
-    router.push('/');
-    setTimeout(() => {
+    
+    if (pathname === '/') {
+      // Already on homepage, just scroll
       const element = document.getElementById(hash);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 100);
+    } else {
+      // Navigate to homepage first, then scroll
+      setPendingScroll(hash);
+      router.push('/');
+    }
   };
 
   return (
