@@ -89,7 +89,7 @@ function ServicesPreview() {
         <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-10">
           From residential rooftops to large-scale commercial installations, we provide end-to-end solar solutions tailored to your needs.
         </p>
-        <div className="grid md:grid-cols-3 gap-8 mb-10">
+        <div className="grid md:grid-cols-2 gap-8 mb-10 max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all">
             <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-3xl">🏠</span>
@@ -107,16 +107,6 @@ function ServicesPreview() {
             <h3 className="text-xl font-bold text-blue-900 mb-3">Commercial Solar</h3>
             <p className="text-gray-600 mb-4">Large-scale installations for businesses with accelerated depreciation benefits</p>
             <Link href="/commercial" className="text-cyan-600 font-semibold hover:text-cyan-700">
-              Learn More →
-            </Link>
-          </div>
-          <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all">
-            <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl">🏭</span>
-            </div>
-            <h3 className="text-xl font-bold text-blue-900 mb-3">Industrial Solar</h3>
-            <p className="text-gray-600 mb-4">High-capacity solar plants for industries with maximum power generation</p>
-            <Link href="/products" className="text-cyan-600 font-semibold hover:text-cyan-700">
               Learn More →
             </Link>
           </div>
