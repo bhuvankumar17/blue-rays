@@ -4,9 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export function Header() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  if (pathname?.startsWith('/admin') || pathname?.startsWith('/pay')) return null;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -31,7 +35,7 @@ export function Header() {
               />
             </div>
           </Link>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
@@ -45,6 +49,9 @@ export function Header() {
             </Link>
             <Link href="/gallery" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Gallery
+            </Link>
+            <Link href="/pay" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+              Pay Online
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
               Contact
@@ -61,7 +68,7 @@ export function Header() {
                 Contact Us
               </button>
             </Link>
-            
+
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
@@ -78,10 +85,9 @@ export function Header() {
         </div>
 
         {/* Mobile Menu */}
-        <div 
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-          }`}
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <div className="mt-4 pb-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4 pt-4">
@@ -114,6 +120,13 @@ export function Header() {
                 Gallery
               </Link>
               <Link
+                href="/pay"
+                onClick={closeMenu}
+                className="text-left text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2"
+              >
+                Pay Online
+              </Link>
+              <Link
                 href="/contact"
                 onClick={closeMenu}
                 className="text-left text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2"
@@ -126,7 +139,7 @@ export function Header() {
                   +91 9600970313
                 </a>
               </div>
-              <Link 
+              <Link
                 href="/contact"
                 onClick={closeMenu}
                 className="w-full px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md hover:from-cyan-600 hover:to-blue-700 transition-all font-medium shadow-lg text-center block"

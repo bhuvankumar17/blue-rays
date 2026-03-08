@@ -7,7 +7,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   let contactId = null;
-  
+
   try {
     const body = await request.json();
     const { name, email, phone, message } = body;
@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
           </div>
         `,
       });
-      
+
       console.log('✅ Email sent successfully!', emailResult);
       console.log('📬 Sent to: blueraysdata@gmail.com');
     } catch (emailError: any) {
@@ -119,6 +119,48 @@ export async function GET(request: NextRequest) {
       {
         success: false,
         error: error.message || 'Failed to fetch contacts',
+      },
+      { status: 500 }
+    );
+  }
+}
+
+export async function PATCH(request: NextRequest) {
+  try {
+    await dbConnect();
+    const body = await request.json();
+    const { id, status } = body;
+
+    if (!id || !status) {
+      return NextResponse.json(
+        { success: false, error: 'Please provide contact id and status' },
+        { status: 400 }
+      );
+    }
+
+    const contact = await Contact.findByIdAndUpdate(
+      id,
+      { status },
+      { new: true, runValidators: true }
+    );
+
+    if (!contact) {
+      return NextResponse.json(
+        { success: false, error: 'Contact not found' },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json({
+      success: true,
+      data: contact,
+    });
+  } catch (error: any) {
+    console.error('Update contact error:', error);
+    return NextResponse.json(
+      {
+        success: false,
+        error: error.message || 'Failed to update contact',
       },
       { status: 500 }
     );
