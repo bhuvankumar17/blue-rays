@@ -17,8 +17,10 @@ import {
     Filter,
     Download,
     MoreVertical,
-    ArrowRight
+    ArrowRight,
+    LogOut
 } from 'lucide-react';
+import AdminLogin from '@/components/AdminLogin';
 
 interface Contact {
     _id: string;
@@ -31,12 +33,56 @@ interface Contact {
 }
 
 export default function AdminDashboard() {
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [authChecking, setAuthChecking] = useState(true);
     const [contacts, setContacts] = useState<Contact[]>([]);
     const [loading, setLoading] = useState(true);
     const [filter, setFilter] = useState<string>('all');
     const [searchQuery, setSearchQuery] = useState('');
     const [refreshing, setRefreshing] = useState(false);
     const [selectedContact, setSelectedContact] = useState<Contact | null>(null);
+
+    // Check authentication on mount
+    useEffect(() => {
+        const checkAuth = async () => {
+            try {
+                const res = await fetch('/api/auth');
+                const data = await res.json();
+                setIsAuthenticated(data.success);
+            } catch {
+                setIsAuthenticated(false);
+            } finally {
+                setAuthChecking(false);
+            }
+        };
+        checkAuth();
+    }, []);
+
+    const handleLogout = async () => {
+        try {
+            await fetch('/api/auth', { method: 'DELETE' });
+        } catch {
+            // Logout even if request fails
+        }
+        setIsAuthenticated(false);
+    };
+
+    // Show loading spinner while checking auth
+    if (authChecking) {
+        return (
+            <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+                <div className="flex flex-col items-center space-y-4">
+                    <RefreshCw className="animate-spin text-blue-400" size={32} />
+                    <p className="text-slate-400 text-sm font-medium">Verifying session...</p>
+                </div>
+            </div>
+        );
+    }
+
+    // Show login page if not authenticated
+    if (!isAuthenticated) {
+        return <AdminLogin onLoginSuccess={() => setIsAuthenticated(true)} />;
+    }
 
     const fetchContacts = async () => {
         setRefreshing(true);
@@ -126,6 +172,13 @@ export default function AdminDashboard() {
                             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                             <span className="font-medium">View Website</span>
                         </a>
+                        <button
+                            onClick={handleLogout}
+                            className="flex items-center space-x-3 px-4 py-3 text-red-400 hover:bg-red-50 hover:text-red-600 rounded-xl transition-all w-full"
+                        >
+                            <LogOut size={18} />
+                            <span className="font-medium">Logout</span>
+                        </button>
                     </nav>
                 </div>
             </div>
@@ -138,6 +191,13 @@ export default function AdminDashboard() {
                         <p className="text-slate-500 mt-1">Manage and track your solar inquiries.</p>
                     </div>
                     <div className="flex items-center space-x-3">
+                        <button
+                            onClick={handleLogout}
+                            className="p-2.5 bg-white border border-red-200 rounded-xl text-red-500 hover:bg-red-50 hover:border-red-300 transition-all flex items-center space-x-2 lg:hidden"
+                        >
+                            <LogOut size={18} />
+                            <span className="hidden sm:inline">Logout</span>
+                        </button>
                         <button
                             onClick={fetchContacts}
                             disabled={refreshing}
